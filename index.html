@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Tracker - See How Long Your Shoes Last</title>
+<meta name="description" content="Track how long your shoes last by entering the purchase date and calculating their lifespan.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>👟 Shoe Lifespan Tracker</h1>
+        
+        <div class="input-group">
+            <label for="purchase-date">Purchase Date:</label><br>
+            <input type="date" id="purchase-date" required>
+        </div>
+
+        <button onclick="markAsBroken()">Mark as Broken 👟</button>
+        
+        <div id="result"></div>
+
+        <div id="history">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+</body>
+</html>
